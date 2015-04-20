@@ -1,4 +1,4 @@
-<?php  namespace campaignly\Providers;
+<?php  namespace Campaignly\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -16,14 +16,14 @@ class RepositoryServiceProvider extends ServiceProvider {
 	private function bootRepositories() {
 		// Bind the UserProfile Interfaces
 		$this->app->bind(
-			'campaignly\Contracts\TenantRepositoryInterface',
-			'campaignly\UserProfile\FileTenantConfig'
+			'Campaignly\Contracts\TenantRepositoryInterface',
+			'Campaignly\UserProfile\FileTenantConfig'
 		);
 
 		// Bind the UserProfile Interfaces
 		$this->app->bind(
-			'campaignly\Contracts\ContactRepositoryInterface',
-			'campaignly\Crm\Repositories\DbContactRepository'
+			'Campaignly\Contracts\ContactRepositoryInterface',
+			'Campaignly\Crm\Repositories\DbContactRepository'
 		);
 	}
 }

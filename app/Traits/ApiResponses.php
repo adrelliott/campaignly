@@ -1,4 +1,4 @@
-<?php namespace campaignly\Traits;
+<?php namespace Campaignly\Traits;
 
 use Illuminate\Support\Facades\Response;
 use Symfony\Component\HttpFoundation\Response as HTTPResponse;

@@ -1,7 +1,7 @@
-<?php namespace campaignly\Http\Controllers\App;
+<?php namespace Campaignly\Http\Controllers\App;
 
-use campaignly\Contracts\ContactRepositoryInterface as ContactRepo;
-use campaignly\Http\Requests\App\StoreContactRequest;
+use Campaignly\Contracts\ContactRepositoryInterface as ContactRepo;
+use Campaignly\Http\Requests\App\StoreContactRequest;
 
 class ContactsController extends BaseController {
 

@@ -30,7 +30,7 @@ return [
 	],
 
 	'stripe' => [
-		'model'  => 'campaignly\User',
+		'model'  => 'Campaignly\User',
 		'key' => '',
 		'secret' => '',
 	],

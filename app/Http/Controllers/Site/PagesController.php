@@ -1,7 +1,7 @@
-<?php namespace campaignly\Http\Controllers\Site;
+<?php namespace Campaignly\Http\Controllers\Site;
 
-use campaignly\Http\Requests;
-use campaignly\Http\Controllers\Controller;
+use Campaignly\Http\Requests;
+use Campaignly\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 

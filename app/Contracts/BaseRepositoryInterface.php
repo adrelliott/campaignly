@@ -1,5 +1,5 @@
 <?php 
-namespace campaignly\Contracts;
+namespace Campaignly\Contracts;
 
 
 interface BaseRepositoryInterface {

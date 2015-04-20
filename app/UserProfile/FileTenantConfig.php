@@ -1,7 +1,7 @@
-<?php  namespace campaignly\UserProfile;
+<?php  namespace Campaignly\UserProfile;
 
-//use campaignly\Contracts\TenantRepositoryInterface;
-use campaignly\Contracts\TenantRepositoryInterface;
+//use Campaignly\Contracts\TenantRepositoryInterface;
+use Campaignly\Contracts\TenantRepositoryInterface;
 use Config, File;
 
 class FileTenantConfig implements TenantRepositoryInterface {

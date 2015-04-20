@@ -1,6 +1,6 @@
-<?php  namespace campaignly\Http\Controllers\Incoming;
+<?php  namespace Campaignly\Http\Controllers\Incoming;
 
-use campaignly\Http\Controllers\Controller;
+use Campaignly\Http\Controllers\Controller;
 
 class BaseController extends Controller {
 

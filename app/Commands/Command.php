@@ -1,4 +1,4 @@
-<?php namespace campaignly\Commands;
+<?php namespace Campaignly\Commands;
 
 abstract class Command {
 

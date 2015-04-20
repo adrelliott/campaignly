@@ -1,7 +1,7 @@
-<?php  namespace campaignly\Http\Controllers\Incoming;
+<?php  namespace Campaignly\Http\Controllers\Incoming;
 
-use campaignly\Http\Requests\Incoming\StoreContactRequest;
-use campaignly\Traits\ApiResponses;
+use Campaignly\Http\Requests\Incoming\StoreContactRequest;
+use Campaignly\Traits\ApiResponses;
 
 class ContactsController  extends BaseController {
 
@@ -34,7 +34,7 @@ class ContactsController  extends BaseController {
 			return $this->respondInvalidRequest( 'No \'source\' param passed' );
 
 		// Can we handle the source?
-		if ( ! class_exists( 'campaignly\Sevices\ImportFrom'.$source ) )
+		if ( ! class_exists( 'Campaignly\Sevices\ImportFrom'.$source ) )
 			return $this->respondInvalidRequest( 'The \'source\' param does not match an ImportFrom service' );
 
 		// OK, now we have a good response, process this data

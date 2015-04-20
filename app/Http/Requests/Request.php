@@ -1,4 +1,4 @@
-<?php namespace campaignly\Http\Requests;
+<?php namespace Campaignly\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

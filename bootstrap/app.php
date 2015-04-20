@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
 	'Illuminate\Contracts\Http\Kernel',
-	'campaignly\Http\Kernel'
+	'Campaignly\Http\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Console\Kernel',
-	'campaignly\Console\Kernel'
+	'Campaignly\Console\Kernel'
 );
 
 $app->singleton(
 	'Illuminate\Contracts\Debug\ExceptionHandler',
-	'campaignly\Exceptions\Handler'
+	'Campaignly\Exceptions\Handler'
 );
 
 /*

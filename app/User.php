@@ -1,4 +1,4 @@
-<?php namespace campaignly;
+<?php namespace Campaignly;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

@@ -1,7 +1,7 @@
-<?php  namespace campaignly\Crm\Repositories;
+<?php  namespace Campaignly\Crm\Repositories;
 
 use Auth;
-use campaignly\Contracts\BaseRepositoryInterface;
+use Campaignly\Contracts\BaseRepositoryInterface;
 use Illuminate\Support\Facades\Event;
 
 class BaseRepository implements BaseRepositoryInterface {

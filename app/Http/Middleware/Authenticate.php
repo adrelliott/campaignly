@@ -1,4 +1,4 @@
-<?php namespace campaignly\Http\Middleware;
+<?php namespace Campaignly\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

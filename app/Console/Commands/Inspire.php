@@ -1,4 +1,4 @@
-<?php namespace campaignly\Console\Commands;
+<?php namespace Campaignly\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

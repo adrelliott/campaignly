@@ -1,6 +1,6 @@
-<?php namespace campaignly\Http\Requests\Incoming;
+<?php namespace Campaignly\Http\Requests\Incoming;
 
-use campaignly\Http\Requests\Request;
+use Campaignly\Http\Requests\Request;
 
 class StoreContactRequest extends Request {
 

@@ -1,4 +1,4 @@
-<?php namespace campaignly\Providers;
+<?php namespace Campaignly\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider {
 	{
 		$this->app->bind(
 			'Illuminate\Contracts\Auth\Registrar',
-			'campaignly\Services\Registrar'
+			'Campaignly\Services\Registrar'
 		);
 	}
 

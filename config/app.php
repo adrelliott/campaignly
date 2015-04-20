@@ -139,13 +139,13 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'campaignly\Providers\AppServiceProvider',
-		'campaignly\Providers\BusServiceProvider',
-		'campaignly\Providers\ConfigServiceProvider',
-		'campaignly\Providers\EventServiceProvider',
-		'campaignly\Providers\RouteServiceProvider',
-		'campaignly\Providers\ViewComposerServiceProvider',
-		'campaignly\Providers\RepositoryServiceProvider',
+		'Campaignly\Providers\AppServiceProvider',
+		'Campaignly\Providers\BusServiceProvider',
+		'Campaignly\Providers\ConfigServiceProvider',
+		'Campaignly\Providers\EventServiceProvider',
+		'Campaignly\Providers\RouteServiceProvider',
+		'Campaignly\Providers\ViewComposerServiceProvider',
+		'Campaignly\Providers\RepositoryServiceProvider',
 
 		/*
 		 * Additional Illuminate Packages

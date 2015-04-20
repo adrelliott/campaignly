@@ -1,4 +1,4 @@
-<?php namespace campaignly\Providers;
+<?php namespace Campaignly\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,6 +1,6 @@
-<?php namespace campaignly\Http\Controllers\Auth;
+<?php namespace Campaignly\Http\Controllers\Auth;
 
-use campaignly\Http\Controllers\Controller;
+use Campaignly\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Foundation\Auth\ResetsPasswords;

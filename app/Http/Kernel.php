@@ -1,4 +1,4 @@
-<?php namespace campaignly\Http;
+<?php namespace Campaignly\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -15,7 +15,7 @@ class Kernel extends HttpKernel {
 		'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
 		'Illuminate\Session\Middleware\StartSession',
 		'Illuminate\View\Middleware\ShareErrorsFromSession',
-		'campaignly\Http\Middleware\VerifyCsrfToken',
+		'Campaignly\Http\Middleware\VerifyCsrfToken',
 	];
 
 	/**
@@ -24,9 +24,9 @@ class Kernel extends HttpKernel {
 	 * @var array
 	 */
 	protected $routeMiddleware = [
-		'auth' => 'campaignly\Http\Middleware\Authenticate',
+		'auth' => 'Campaignly\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-		'guest' => 'campaignly\Http\Middleware\RedirectIfAuthenticated',
+		'guest' => 'Campaignly\Http\Middleware\RedirectIfAuthenticated',
 	];
 
 }

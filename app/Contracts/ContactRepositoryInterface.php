@@ -1,4 +1,4 @@
-<?php namespace campaignly\Contracts;
+<?php namespace Campaignly\Contracts;
 
 
 interface ContactRepositoryInterface extends BaseRepositoryInterface {

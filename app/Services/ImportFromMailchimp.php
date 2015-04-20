@@ -1,4 +1,4 @@
-<?php  namespace campaignly\Services;
+<?php  namespace Campaignly\Services;
 
 class ImportFromMailchimp implements ImportFrom {
 

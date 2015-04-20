@@ -16,6 +16,12 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+// Workbench routes - for mucking about
+Route::get('/workbench/env', ['uses' => 'WorkbenchController@test_env']);
+Route::get('/workbench/queue', ['uses' => 'WorkbenchController@test_queue']);
+
+
+
 // Site Routes
 Route::get('/', ['uses' => 'Site\PagesController@index']);
 Route::get('/about', ['uses' => 'Site\PagesController@about']);
@@ -31,6 +37,16 @@ Route::group([
 ], function() {
 	Route::get( '/home', ['uses' => 'HomeController@index'] );
 	Route::resource( 'contacts', 'ContactsController' );
+});
+
+// Queue Routes
+Route::group([
+	//'middleware'    =>  'auth',
+	'prefix'    =>  'queue',
+	'namespace' => 'Queue'
+], function() {
+	Route::get( '/add', ['uses' => 'QueuesController@add'] );
+//	Route::resource( 'contacts', 'ContactsController' );
 });
 
 // Incoming Routes

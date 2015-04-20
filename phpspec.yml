@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: campaignly
-        psr4_prefix: campaignly
+        namespace: Campaignly
+        psr4_prefix: Campaignly
         src_path: app

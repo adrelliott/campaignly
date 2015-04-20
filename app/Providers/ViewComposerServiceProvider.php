@@ -1,4 +1,4 @@
-<?php  namespace campaignly\Providers;
+<?php  namespace Campaignly\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use View;
@@ -11,7 +11,7 @@ class ViewComposerServiceProvider extends ServiceProvider {
 	 * @return void
 	 */
 	public function boot() {
-		View::composer( 'app.*', 'campaignly\Http\ViewComposers\ProfileComposer' );
+		View::composer( 'app.*', 'Campaignly\Http\ViewComposers\ProfileComposer' );
 	}
 
 		/**

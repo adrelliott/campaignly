@@ -1,4 +1,4 @@
-<?php namespace campaignly\Exceptions;
+<?php namespace Campaignly\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

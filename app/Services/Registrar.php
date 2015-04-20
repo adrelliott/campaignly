@@ -1,6 +1,6 @@
-<?php namespace campaignly\Services;
+<?php namespace Campaignly\Services;
 
-use campaignly\User;
+use Campaignly\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

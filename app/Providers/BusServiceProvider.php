@@ -1,4 +1,4 @@
-<?php namespace campaignly\Providers;
+<?php namespace Campaignly\Providers;
 
 use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +16,7 @@ class BusServiceProvider extends ServiceProvider {
 		$dispatcher->mapUsing(function($command)
 		{
 			return Dispatcher::simpleMapping(
-				$command, 'campaignly\Commands', 'campaignly\Handlers\Commands'
+				$command, 'Campaignly\Commands', 'Campaignly\Handlers\Commands'
 			);
 		});
 	}
