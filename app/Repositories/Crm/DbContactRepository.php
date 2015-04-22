@@ -1,8 +1,8 @@
-<?php  namespace Campaignly\Crm\Repositories;
+<?php  namespace Campaignly\Repositories\Crm;
 
-use Campaignly\Contracts\ContactRepositoryInterface;
-use Campaignly\Crm\Contact;
+use Campaignly\Contracts\Crm\ContactRepositoryInterface;
 use Auth;
+use Campaignly\Contact;
 
 class DbContactRepository extends BaseRepository implements ContactRepositoryInterface  {
 

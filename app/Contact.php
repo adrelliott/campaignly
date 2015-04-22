@@ -1,4 +1,4 @@
-<?php namespace Campaignly\Crm;
+<?php namespace Campaignly;
 
 use Illuminate\Database\Eloquent\Model;
 

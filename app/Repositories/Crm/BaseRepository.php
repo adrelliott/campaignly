@@ -1,4 +1,4 @@
-<?php  namespace Campaignly\Crm\Repositories;
+<?php  namespace Campaignly\Repositories\Crm;
 
 use Auth;
 use Campaignly\Contracts\BaseRepositoryInterface;

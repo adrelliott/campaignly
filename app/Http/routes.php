@@ -5,9 +5,9 @@
 | Application Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
+| Excluding a route from CSRF? Go to Http/Middleware/VerifyCsrfToken.php
+|
+|
 |
 */
 
@@ -49,13 +49,21 @@ Route::group([
 //	Route::resource( 'contacts', 'ContactsController' );
 });
 
-// Incoming Routes
+
+
+
+// Incoming Routes - perhaps move these to a lumen service later
 Route::group([
 	'prefix'    =>  'incoming',
-	'namespace' => 'Incoming'
+	'middleware' => 'Campaignly\Http\Middleware\IncomingMiddleware',
+	'namespace' => 'Incoming',
 ], function() {
 
-	/** Contacts */
-	Route::get('contacts/store', ['uses' => 'ContactsController@verifyWebhook']);
-	Route::post('contacts/store', ['uses' => 'ContactsController@store']);
+	/** Webhooks - accept incoming data from a webhook */
+	Route::get('webhooks/contacts/store', ['uses' => 'ContactsController@verifyWebhook']);
+	Route::post('webhooks/contacts/store', ['uses' => 'ContactsController@storeWebhook']);
+
+	/** Webforms */
+	Route::post('webforms/contacts/store', ['uses' => 'ContactsController@storeWebForm']);
 });
+

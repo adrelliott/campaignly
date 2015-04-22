@@ -14,16 +14,16 @@ class RepositoryServiceProvider extends ServiceProvider {
 	}
 
 	private function bootRepositories() {
-		// Bind the UserProfile Interfaces
+		// Bind the Users Interfaces
 		$this->app->bind(
-			'Campaignly\Contracts\TenantRepositoryInterface',
-			'Campaignly\UserProfile\FileTenantConfig'
+			'Campaignly\Contracts\Users\TenantRepositoryInterface',
+			'Campaignly\Repositories\Users\FileTenantConfig'
 		);
 
-		// Bind the UserProfile Interfaces
+		// Bind the Contacts Interfaces
 		$this->app->bind(
-			'Campaignly\Contracts\ContactRepositoryInterface',
-			'Campaignly\Crm\Repositories\DbContactRepository'
+			'Campaignly\Contracts\Crm\ContactRepositoryInterface',
+			'Campaignly\Repositories\Crm\DbContactRepository'
 		);
 	}
 }

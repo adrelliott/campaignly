@@ -1,8 +1,8 @@
-<?php namespace Campaignly\Contracts;
+<?php  namespace Campaignly\Contracts\Users;
 
 interface TenantRepositoryInterface {
 
-	// defines how we access the tenant model/config
+	// Handles the config for each tenant
 
 	public function getPreferences();
 	public function getId();

@@ -1,6 +1,6 @@
 <?php namespace Campaignly\Http\Controllers\App;
 
-use Campaignly\Contracts\ContactRepositoryInterface as ContactRepo;
+use Campaignly\Contracts\Crm\ContactRepositoryInterface as ContactRepo;
 use Campaignly\Http\Requests\App\StoreContactRequest;
 
 class ContactsController extends BaseController {
@@ -22,7 +22,7 @@ class ContactsController extends BaseController {
 	 */
 	public function index()
 	{
-		$contacts = 'all contacts';
+		$contacts = $this->repo->getAllRows();
 		return view('app.contacts.index')->withResults($contacts);
 	}
 

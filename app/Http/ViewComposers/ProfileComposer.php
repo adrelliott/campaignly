@@ -1,8 +1,7 @@
 <?php  namespace Campaignly\Http\ViewComposers;
 
-//use Campaignly\UserProfile\Tenant;
 use Illuminate\Contracts\View\View;
-use Campaignly\Contracts\TenantRepositoryInterface as Tenant;
+use Campaignly\Contracts\Users\TenantRepositoryInterface as Tenant;
 
 class ProfileComposer {
 

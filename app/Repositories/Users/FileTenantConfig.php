@@ -1,7 +1,6 @@
-<?php  namespace Campaignly\UserProfile;
+<?php  namespace Campaignly\Repositories\Users;
 
-//use Campaignly\Contracts\TenantRepositoryInterface;
-use Campaignly\Contracts\TenantRepositoryInterface;
+use Campaignly\Contracts\Users\TenantRepositoryInterface;
 use Config, File;
 
 class FileTenantConfig implements TenantRepositoryInterface {
@@ -33,4 +32,5 @@ class FileTenantConfig implements TenantRepositoryInterface {
 			return ['tenant_id' => $this->getId()];
 		return $tenantConfig + ['tenant_id' => $this->getId()];
 	}
+
 }

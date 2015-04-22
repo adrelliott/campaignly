@@ -6,7 +6,7 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 class VerifyCsrfToken extends BaseVerifier {
 
 	private $skipRoutes = [
-		'incoming/contacts/store',
+		'incoming/webhooks/contacts/store',
 	];
 
 	/**

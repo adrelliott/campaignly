@@ -1,5 +1,6 @@
-<?php namespace Campaignly\Contracts;
+<?php namespace Campaignly\Contracts\Crm;
 
+use Campaignly\Contracts\BaseRepositoryInterface;
 
 interface ContactRepositoryInterface extends BaseRepositoryInterface {
 
@@ -7,4 +8,5 @@ interface ContactRepositoryInterface extends BaseRepositoryInterface {
 	public function setOrganisationId( $contact_id, $organisation_id );
 
 	// Child resources
+
 }
